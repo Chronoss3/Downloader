@@ -29,7 +29,7 @@ namespace Downloader
 
                 listView1.Items.Insert(0x0, _List_View_Item);
                 listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-                listView1.AutoResizeColumn(1, ColumnHeaderAutoResizeStyle.ColumnContent);
+                listView1.AutoResizeColumn(0x1, ColumnHeaderAutoResizeStyle.ColumnContent);
 
                 if (_Status.Equals("Valid"))
                 {
