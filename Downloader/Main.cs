@@ -27,7 +27,7 @@ namespace Downloader
                 _List_View_Item.Text = Data._URL;
                 _List_View_Item.SubItems.Add(_Status);
 
-                listView1.Items.Insert(0, _List_View_Item);
+                listView1.Items.Insert(0x0, _List_View_Item);
                 listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 listView1.AutoResizeColumn(1, ColumnHeaderAutoResizeStyle.ColumnContent);
 
@@ -46,7 +46,7 @@ namespace Downloader
 
         private void RemoveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (listView1.SelectedItems.Count > 0)
+            if (listView1.SelectedItems.Count > 0x0)
             {
                 foreach (ListViewItem _URL in listView1.SelectedItems)
                 {
@@ -79,7 +79,7 @@ namespace Downloader
 
                 new Compiler().Build(_Stub, _Save_File_Dialog.FileName);
 
-                MessageBox.Show("Done!");
+                MessageBox.Show("Done");
             }
         }
     }
